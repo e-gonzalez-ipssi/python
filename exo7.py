@@ -1,5 +1,5 @@
-def pair_impair(integer):
-    return False if integer % 2 else True
+def pair_impair(value):
+    return True if value % 2 else False
 
 print(pair_impair(112))
 print(pair_impair(111))
