@@ -1,9 +1,5 @@
 def is_reverse_word(string):
-    stringInverse = string[::-1]
-    if stringInverse == string:
-        return True
-    else:
-        return False
+    return string == string[::-1]
 
 print(is_reverse_word("aza"))
 print(is_reverse_word("coloc"))
