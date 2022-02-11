@@ -1,8 +1,5 @@
 def remove(string):
-    if string[len(string)-1] == "!":
-        return string[:-1]
-    else:
-        return string
+    return string if not string[len(string)-1] == "!" else string[:-1]
     
 print(remove("Hi!"))
 print(remove("Hi!!!"))
