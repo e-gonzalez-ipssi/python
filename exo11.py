@@ -1,10 +1,10 @@
 def validate_word(string):
     already_use = {}
     for char in string:
-        if char in already_use:
-            already_use[char] += 1
+        if char.lower() in already_use:
+            already_use[char.lower()] += 1
         else:
-            already_use[char] = 1
+            already_use[char.lower()] = 1
     
     nums = []
     for key in already_use:
