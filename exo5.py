@@ -1,5 +1,5 @@
 def pillars(num, length, width):
-    if num <= 0:
+    if num <= 1:
         return 0
     else:
         return (num-1) * (length * 100) + (num-2) * (width)
